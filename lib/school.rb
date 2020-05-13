@@ -18,6 +18,7 @@
 #     @roster
 #   end
 # end
+<<<<<<< HEAD
 class School
   #Create an instance on initialization for #names and #roster
   def initialize(name, roster={})
@@ -58,6 +59,9 @@ end
 
 
 end
+=======
+
+>>>>>>> 9e99b1192d2b13a9620f0fff73732efae3230d8e
 class School
   #Create an instance on initialization for #names and #roster
   def initialize(name, roster={})
@@ -93,17 +97,25 @@ def grade(grade_num)
 end
 
 def sort
+<<<<<<< HEAD
 sorted_grades = {} #empty hash for the return
 @roster.collect do |grades, students| #iterate though roster
   sorted_students_array = @roster[grades].sort#sorts students alphabetically into an array
   sorted_grades[grades] = sorted_students_array #adds the key/value or grade and respective students into alphabetically order to new hash
 end
 sorted_grades
+=======
+  @roster.sort
+>>>>>>> 9e99b1192d2b13a9620f0fff73732efae3230d8e
 end
 
 
 end
+<<<<<<< HEAD
 #
+=======
+
+>>>>>>> 9e99b1192d2b13a9620f0fff73732efae3230d8e
 # hash = {9=>["uriah"], 3=>["laura"], 5=>["dany"]}
 # hash.select {|grade_num , student| puts grade_num if grade_num == 3 }
 # hash.each {|name , age|  puts hash[name] if name == 3 }
@@ -111,18 +123,22 @@ end
 # def grade(grade_num)
 #   puts hash[grade_num]
 #   end
+<<<<<<< HEAD
 #
 #   def sort
 #   sorted_grades = {}
 #   @roster.collect do |grades, students|
 #     sorted_grades[grades] = @roster[grades].sort
 #   end
+=======
+>>>>>>> 9e99b1192d2b13a9620f0fff73732efae3230d8e
 #   # classroom = []
 #   # hash.each do |grade, students|
 #   #   if grade == grade_num
 #   #     classroom << hash[grade]
 #   #   end
 #   # end
+<<<<<<< HEAD
 #
 #
 #
@@ -137,3 +153,19 @@ end
 #     #     @roster[grade_num] = [student]
 #     #   end
 #     # end
+=======
+
+
+
+
+    # @roster.each do |grade, student_names|
+    #   #Checks to see if there any existing keys that match the arguement that was passed into grade_num
+    #   if grade == grade_num
+    #     #If true, then it means that there is an existing array and that all that is needed is to push
+    #     #the newest student into the class or grade
+    #     @roster[grade] << student
+    #   else #if false, then that means there is no key for that grade_num and we need to assign a new key
+    #     @roster[grade_num] = [student]
+    #   end
+    # end
+>>>>>>> 9e99b1192d2b13a9620f0fff73732efae3230d8e
